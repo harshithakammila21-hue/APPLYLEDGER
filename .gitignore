@@ -1,5 +1,42 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Credentials and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+credentials*.json
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build output
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+
+# Caches and temporary files
+.cache/
+.parcel-cache/
+.turbo/
+.temp/
+tmp/
+temp/
+*.tsbuildinfo
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,25 +44,34 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-# Editor directories and files
+# Editor and IDE files
+.idea/
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+*.swp
+*.swo
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Environment files
-.env
-.env*.local
+# Local database files and dumps
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql.gz
 
-# Temporary / build artifacts
-*.tsbuildinfo
+# Test artifacts
+playwright-report/
+test-results/
+
+# Local tool state
+.vercel/
+.netlify/
